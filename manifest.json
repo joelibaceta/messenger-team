@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Messenger Teams",
+  "description": "Lorem ipsum dolor sit amet",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ]
+}
